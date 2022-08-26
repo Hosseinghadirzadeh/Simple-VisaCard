@@ -8,7 +8,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  background: #f5f5f5;
+  background: #ddeefc;
 }
 
 main {
@@ -26,21 +26,27 @@ main {
 }
 
 .container {
-  border: 1px solid red;
   width: 570px;
   height: 400px;
   background: #fff;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .container > .card {
   border-radius: 5px;
   width: 430px;
   height: 270px;
-  border: 1px solid red;
   -webkit-transform: translate(16%, -50%);
           transform: translate(16%, -50%);
   background-color: #fff;
@@ -65,7 +71,6 @@ main {
   width: 100%;
   height: 40px;
   padding: 5px;
-  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +94,6 @@ main {
 }
 
 .container > .card > .front > div {
-  border: 1px solid white;
   width: 100%;
   height: 60%;
   display: -webkit-box;
@@ -101,7 +105,6 @@ main {
 
 .container > .card > .front > div #txt {
   width: 100%;
-  border: 1px solid rebeccapurple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +113,13 @@ main {
   -ms-flex-line-pack: start;
       align-content: flex-start;
   padding: 5px;
+}
+
+.container > .card > .front > div #txt p {
+  margin-top: 5px;
+  width: 100%;
+  font-size: 25px;
+  color: white;
 }
 
 .container > .card > .front > div #txt span {
@@ -138,7 +148,6 @@ main {
 }
 
 .container > .card > .front > div #CardHolder {
-  border: 1px solid rebeccapurple;
   width: 50%;
   padding: 5px;
 }
@@ -153,7 +162,6 @@ main {
 }
 
 .container > .card > .front > div #expire {
-  border: 1px solid rebeccapurple;
   width: 50%;
   padding: 5px;
 }
@@ -165,5 +173,31 @@ main {
   font-weight: bold;
   height: 30%;
   display: block;
+}
+
+.container .inputs {
+  width: 100%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 10px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .inputs > input {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */
