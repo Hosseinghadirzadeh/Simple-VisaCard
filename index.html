@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visa Card</title>
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,16 +27,16 @@
 
                     <div>
 
-                        <div id="txt"><span>Card NO:</span>
+                        <div id="txt"><span >Card NO:</span>
                             <p id="CN"></p>
                         </div>
 
                         <div id="CardHolder"><span>CardHolder:</span>
-                            <p></p>
+                            <p id="CH"></p>
                         </div>
 
                         <div id="expire"><span>Expire:</span>
-                            <p></p>
+                            <p id="DH"></p>
                         </div>
 
                     </div>
@@ -46,9 +49,9 @@
                 <label for="">Card Number:</label>
                 <input type="text" onkeyup="_write(event)">
                 <label for="">Card Holder:</label>
-                <input type="text" id="Name">
+                <input type="text" id="Name" onkeyup="_write2(event,'CH')">
                 <label for="">Expire Date:</label>
-                <input type="month" name="" id="">
+                <input type="month" name="" id="date" onchange="_write2(event,'DH')">
             </section>
         </div>
 

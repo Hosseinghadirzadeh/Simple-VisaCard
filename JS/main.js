@@ -10,3 +10,8 @@ function _write(e) {
             e.target.value += ' '
         }
 }
+function _write2(e,id) {
+    let temp = e.target.value;
+    let show = document.getElementById(id);
+    show.innerHTML = temp;
+}
